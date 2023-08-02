@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    width: 94vw;
+    height: 94vh;
+    padding: 3%;
+    font-family: 'Inter', sans-serif;
+    color: var(--dark-blue-dark-blue-300, #0A3871);
+    background: var(--light-blue-light-blue-100, #F3F5FC);
+    font-size: 18px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    height: 10%;
+}
+
+main {
+    height: 90%;
+}
+
+.input-area {
+    height: 60%;
+    padding: 3%;
+}
+
+#input {
+    height: 60%;
+    width: 100%;
+    color: var(--dark-blue-dark-blue-300, #0A3871);
+    background: var(--light-blue-light-blue-100, #F3F5FC);
+    text-align: center;
+    resize: none;
+    border-radius: 24px;
+}
+
+.message {
+    height: 10%;
+    font-size: 12px;
+    text-align: center;
+}
+
+.button-area {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.encrypt-button {
+    height: 45%;
+    border-radius: 24px;
+    background: var(--dark-blue-dark-blue-300, #0A3871);
+    color: var(--white, #FFF);
+}
+
+.encrypt-button:hover {
+    background-color: var(--light-blue-dark-blue-300, #0A3871);
+}
+
+.encrypt-button:active {
+    background-color: var(--light-blue-dark-blue-300, #0A3871);
+    transform: scale(0.95);
+}
+
+.decrypt-button {
+    height: 45%;
+    border-radius: 24px;
+    border: 1px solid var(--dark-blue-dark-blue-300, #0A3871);
+    background: #D8DFE8;
+    color: var(--dark-blue-dark-blue-300, #0A3871);
+}
+
+.decrypt-button:hover {
+    background-color: var(--light-blue-light-blue-100, #F3F5FC);
+}
+
+.decrypt-button:active {
+    background-color: var(--light-blue-light-blue-100, #F3F5FC);
+    transform: scale(0.95);
+}
+
+.output-area {
+    height: 35%;
+    padding: 3%;
+}
+
+.output-init {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5%;
+}
+
+.output-first-message {
+    font-weight: bold;
+}
+
+img {
+    display: none;
+}
+
+.output-response {
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+#output {
+    height: 45%;
+    width: 100%;
+    resize: none;
+    color: var(--dark-blue-dark-blue-300, #0A3871);
+    background: var(--light-blue-light-blue-100, #F3F5FC);
+    text-align: center;
+}
+
+.copy {
+    width: 60%;
+    height: 20%;
+    border-radius: 24px;
+    border: 1px solid var(--dark-blue-dark-blue-300, #0A3871);
+    background: #D8DFE8;
+    color: var(--dark-blue-dark-blue-300, #0A3871);
+}
+
+.copy:hover {
+    background-color: var(--light-blue-dark-blue-300, #0A3871);
+}
+
+.copy:active {
+    background-color: var(--light-blue-dark-blue-300, #0A3871);
+    transform: scale(0.95);
+}
+
+footer {
+    height: 5%;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+.small{
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (min-width:640px) {
+    body {
+        font-size: 24px;
+    }
+
+    .input-area {
+        height: 50%;
+    }
+
+    #input {
+        height: 70%;
+    }
+
+    .message {
+        font-size: 18px;
+    }
+
+    .button-area {
+        height: 30%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+
+    .encrypt-button {
+        height: 55%;
+        width: 45%;
+        border-radius: 24px;
+    }
+
+    .decrypt-button {
+        height: 55%;
+        width: 45%;
+        border-radius: 24px;
+    }
+
+    .output-area {
+        height: 40%;
+    }
+
+    #output {
+        height: 60%;
+    }
+
+    .copy {
+        width: 30%;
+        height: 20%;
+        border-radius: 24px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    header {
+        width: 100%;
+        height: 10%;
+        font-size: 56px;
+    }
+
+    main {
+        width: 100%;
+        height: 85%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input-area {
+        width:66%;
+        height: 100%;
+    }
+
+    #input {
+        height: 60%;
+    }
+
+    .message {
+        height: 10%;
+    }
+
+    .button-area {
+        height: 25%;
+    }
+
+    .output-area {
+        width: 34%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        display: initial;
+    }
+
+    .output-response {
+        width: 100%;
+        height: 100%;
+    }
+
+    .copy {
+        width: 65%;
+        height: 10%;
+    }
+
+    footer {
+        height: 10%;
+    }
+}

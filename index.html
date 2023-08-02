@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Roberto Huerta</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header><img src="img/Logo.png" alt="Logo Alura"></header>
+    <main>
+        <div class="input-area">
+            <textarea name="input" id="input" placeholder="Ingrese aquí su texto a encriptar"></textarea>
+
+            <div class="message">¡El encriptador de palabras solo acepta minúsculas, más no acentos ni carácteres especiales!</div>
+
+            <div class="button-area">
+                <button class="encrypt-button" id="encrypt-button">Encriptar</button>
+                <button class="decrypt-button" id="decrypt-button">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="output-area">
+            <div class="output-init" id="output-init">
+                <img src="img/Muñeco.png" alt="Encriptador">
+                <p class="output-first-message">Ningún mensaje fue encontrado</p>
+                <p class="output-secon-message">Ingrese el texto a encriptar</p>
+            </div>
+
+            <div class="output-response" id="output-response">
+                <textarea name="output" id="output" disabled="true"></textarea>
+                <button class="copy" id="copy">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/edrohura/"><img class="small" src="img/linkedin.png"></a>
+        <a href="https://github.com/edrohura"><img class="small" src="img/github.webp"></a>
+        <a href="https://www.facebook.com/edrohura/"><img class="small" src="img/Facebook.webp"></a>
+        <a href="https://www.instagram.com/edrohura/"><img class="small" src="img/instagram.webp"></a>
+        <p class="copyright">&copy; Copyright Edsel Huerta - 2023</p>
+    </footer>
+
+    <script src="js/encrypter.js"></script>
+</body>
+
+</html>
